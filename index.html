@@ -38,7 +38,6 @@
         };
 
         let player;
-        let attack;
         let platforms;
         let cursors;
 
@@ -52,7 +51,6 @@
         }
 
         function create() {
-            attack = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
 
             this.add.image(320, 180, 'background').setScale(2);
             platforms = this.physics.add.staticGroup({
